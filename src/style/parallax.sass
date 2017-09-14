@@ -1,4 +1,4 @@
-$image-height: 640px
+$image-height: 100vh
 
 .section-02
   background: white
@@ -7,14 +7,14 @@ $image-height: 640px
   position: relative
   height: $image-height
   background:
-    image: url(/img/observatory-new-york.jpg)
+    image: url(/img/01-home-header-bg-new.svg)
     // size: auto $image-height
     size: cover
     position: top center
     attachment: fixed
     repeat: no-repeat
   overflow: hidden
-  filter: saturate(74%) brightness(1.12);
+  // filter: saturate(74%) brightness(1.12);
 
 
 .logo
@@ -31,20 +31,19 @@ $image-height: 640px
   // transition: all .3s ease-in-out
 
 .fore
-  width: 960px
-  height: 575px
+  width: 864px
+  height: 800px
   background: 
     // color: transparentize(pink, 0.3)
-    image: url(/img/iphone.png)
+    image: url(/img/01-home-0-9.png)
+    size: contain
     repeat: no-repeat
     position: right bottom
   position: absolute
   // left: 50%
   // margin-left: -480px
-  right: 10%
-  top: 400px
-
-
+  right: 16px
+  top: 0px
 
 .back
   width: 960px
@@ -57,3 +56,6 @@ $image-height: 640px
   position: absolute
   top: 48px
   left: 10%
+
+.text-block
+  font-family: 'Montserrat', sans-serif

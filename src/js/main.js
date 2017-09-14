@@ -3,6 +3,10 @@ window.$ = $;
 window.jquery = $;
 window.jQuery = $;
 
+$(document).ready(function() {
+
+})
+
 $(window).scroll(function() {
   
   let wScroll = $(this).scrollTop();
@@ -16,7 +20,7 @@ $(window).scroll(function() {
   });
 
   $('.fore').css({
-    'transform': 'translate(0px, -' + wScroll/16 + '%)'
+    'transform': 'translate(0px, ' + wScroll/16 + '%)'
   });
 
 })
