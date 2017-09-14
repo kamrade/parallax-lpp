@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
-  "version": "0.2.5",
-  "description": "simple boilerplate for small project with using jquery",
+  "name": "parallax-lpp",
+  "version": "0.1.0",
+  "description": "parallax testing",
   "main": "app.js",
   "scripts": {
     "start": "rimraf dev && gulp",
