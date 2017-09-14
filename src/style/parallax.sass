@@ -5,9 +5,10 @@ $image-height: 100vh
 
 .header
   position: relative
+  z-index: 1
   height: $image-height
   background:
-    image: url(/img/01-home-header-bg-new.svg)
+    image: url(/img/bg.svg)
     // size: auto $image-height
     size: cover
     position: top center
@@ -26,8 +27,10 @@ $image-height: 100vh
     repeat: no-repeat
     size: contain
   position: absolute
+  z-index: 1
   top: 50%
   margin-top: -58px
+  opacity: 0
   // transition: all .3s ease-in-out
 
 .fore
@@ -35,15 +38,15 @@ $image-height: 100vh
   height: 800px
   background: 
     // color: transparentize(pink, 0.3)
-    image: url(/img/01-home-0-9.png)
+    image: url(/img/home_01.png)
     size: contain
     repeat: no-repeat
     position: right bottom
   position: absolute
+  z-index: 1
   // left: 50%
-  // margin-left: -480px
+  margin-left: -480px
   right: 16px
-  top: 0px
 
 .back
   width: 960px
@@ -54,8 +57,33 @@ $image-height: 100vh
     repeat: no-repeat
     position: top left
   position: absolute
+  z-index: 1
   top: 48px
   left: 10%
 
 .text-block
-  font-family: 'Montserrat', sans-serif
+  position: absolute
+  z-index: 2
+  font-family: 'Muli', sans-serif
+  top: 40%
+  left: 4rem
+  max-width: 440px
+  &:hover
+    .desc
+      opacity: 1
+    .text-wrapper
+      transform: translateY(-32px)
+  .text-wrapper
+    cursor: pointer
+    position: relative
+    transition: all .6s ease
+  h2
+    font-size: 4rem
+    letter-spacing: -1px
+    font-weight: 600
+    text-transform: uppercase
+  h5
+    margin-bottom: 2rem
+  .desc
+    transition: opacity .3s ease
+    opacity: 0

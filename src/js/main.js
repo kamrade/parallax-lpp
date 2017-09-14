@@ -15,6 +15,10 @@ $(window).scroll(function() {
     'transform': 'translate(0px, ' + wScroll/2 + '%)'
   })
 
+  $('.text-block').css({
+    'transform': 'translate(0px, ' + wScroll/4 + '%)'
+  })
+
   $('.back').css({
     'transform': 'translate(0px, ' + wScroll/4 + '%)'
   });
