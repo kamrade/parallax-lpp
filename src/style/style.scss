@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,600,700,900');
 
 @import 'bootstrap';
+@import 'parallax';
 
 * {
   box-sizing: border-box;
@@ -52,4 +53,8 @@ body {
     font-size: 0.9rem;
     line-height: 1.5;
   }
+}
+
+.long {
+  height: 2000px;
 }

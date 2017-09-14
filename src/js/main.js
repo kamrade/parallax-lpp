@@ -1,21 +1,23 @@
-// Libraries
-
 let $ = require('jquery');
 window.$ = $;
 window.jquery = $;
 window.jQuery = $;
 
-// let Tether = require('../../node_modules/tether/dist/js/tether');
-// window.Tether = Tether;
-// require('../../node_modules/bootstrap/dist/js/bootstrap');
-// let Handlebars = require('handlebars');
+$(window).scroll(function() {
+  
+  let wScroll = $(this).scrollTop();
+  
+  $('.logo').css({
+    'transform': 'translate(0px, ' + wScroll/2 + '%)'
+  })
 
-console.log("Basic Project");
+  $('.back').css({
+    'transform': 'translate(0px, ' + wScroll/4 + '%)'
+  });
 
-let img = () => {
-  return 42;
-};
-console.log(img());
+  $('.fore').css({
+    'transform': 'translate(0px, -' + wScroll/16 + '%)'
+  });
 
-let importedModule = require('./module');
-console.dir( importedModule );
+})
+

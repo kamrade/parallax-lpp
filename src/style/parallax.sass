@@ -1,0 +1,59 @@
+$image-height: 640px
+
+.section-02
+  background: white
+
+.header
+  position: relative
+  height: $image-height
+  background:
+    image: url(/img/observatory-new-york.jpg)
+    // size: auto $image-height
+    size: cover
+    position: top center
+    attachment: fixed
+    repeat: no-repeat
+  overflow: hidden
+  filter: saturate(74%) brightness(1.12);
+
+
+.logo
+  height: 112px
+  width: 100%
+  background:
+    image: url(/img/logo.svg)
+    position: center
+    repeat: no-repeat
+    size: contain
+  position: absolute
+  top: 50%
+  margin-top: -58px
+  // transition: all .3s ease-in-out
+
+.fore
+  width: 960px
+  height: 575px
+  background: 
+    // color: transparentize(pink, 0.3)
+    image: url(/img/iphone.png)
+    repeat: no-repeat
+    position: right bottom
+  position: absolute
+  // left: 50%
+  // margin-left: -480px
+  right: 10%
+  top: 400px
+
+
+
+.back
+  width: 960px
+  height: 120px
+  background:
+    // color: transparentize(pink, 0.3)
+    image: url(/img/octocat.png)
+    repeat: no-repeat
+    position: top left
+  position: absolute
+  top: 48px
+  left: 10%
