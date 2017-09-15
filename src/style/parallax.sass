@@ -9,14 +9,11 @@ $image-height: 100vh
   height: $image-height
   background:
     image: url(/img/bg.svg)
-    // size: auto $image-height
     size: cover
     position: top center
     attachment: fixed
     repeat: no-repeat
   overflow: hidden
-  // filter: saturate(74%) brightness(1.12);
-
 
 .logo
   height: 112px
@@ -35,7 +32,7 @@ $image-height: 100vh
 
 .fore
   width: 864px
-  height: 800px
+  height: 1020px
   background: 
     // color: transparentize(pink, 0.3)
     image: url(/img/home_01.png)
@@ -44,7 +41,6 @@ $image-height: 100vh
     position: right bottom
   position: absolute
   z-index: 1
-  // left: 50%
   margin-left: -480px
   right: 16px
 
@@ -64,13 +60,15 @@ $image-height: 100vh
 .text-block
   position: absolute
   z-index: 2
-  font-family: 'Muli', sans-serif
+  font-family: 'Libre Franklin', sans-serif;
   top: 40%
   left: 4rem
   max-width: 440px
+
   &:hover
-    .desc
+    .desc, .link
       opacity: 1
+      transform: translateY(0)
     .text-wrapper
       transform: translateY(-32px)
   .text-wrapper
@@ -78,12 +76,50 @@ $image-height: 100vh
     position: relative
     transition: all .6s ease
   h2
-    font-size: 4rem
+    font-size: 3.5rem
     letter-spacing: -1px
     font-weight: 600
-    text-transform: uppercase
+    margin-bottom: 1.5rem
+
   h5
+    font-size: 1.5rem
     margin-bottom: 2rem
-  .desc
-    transition: opacity .3s ease
+    line-height: 1.5
+    font-weight: 400
+  .desc, .link
     opacity: 0
+    transform: translateY(24px)
+  .desc
+    transition: opacity .54s ease-in-out, transform .54s ease-in-out
+  .link
+    transition: opacity .15s .43s ease-in-out, transform .15s .43s ease-in-out
+    font-weight: 600
+    text-decoration: underline
+
+.my-animated
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.my-fade-down
+  animation-name: myFadeInDown
+
+.my-fade-left
+  animation-name: myFadeInLeft
+
+@keyframes myFadeInDown
+  0%
+    opacity: 0
+    transform: translate3d(0, -24px, 0)
+
+  100%
+    opacity: 1
+    transform: none
+
+@keyframes myFadeInLeft
+  0%
+    opacity: 0
+    transform: translate3d(-24px, 0, 0)
+
+  100%
+    opacity: 1
+    transform: none

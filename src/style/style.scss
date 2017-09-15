@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,400i,500,600,700,900');
-@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,400i,500,600');
+
+@import '../../node_modules/animate.css/animate';
 
 @import 'bootstrap';
 @import 'parallax';
@@ -12,50 +13,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  color: $gray-900;
   font-size: 16px;
 }
 
 body {
-  font-family: 'Playfair Display', serif;
-  color: #45494f;
-}
-
-.title {
-  font-size: 3.5rem;
-  font-weight: 400;
-  text-align: center;
-  padding: 2rem;
-}
-
-.img-container {
-  position: relative;
-  overflow: hidden;
-  img {
-    position: relative;
-    width: 100%;
-  }
-}
-
-.section-01 {
-  padding: 4rem;
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: center;
-  h2 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid $gray-300;
-    padding-bottom: 1rem;
-  }
-  p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 0.9rem;
-    line-height: 1.5;
-  }
+  font-family: 'Libre Franklin', sans-serif;
+  color: $text-color;
 }
 
 .long {
   height: 2000px;
+}
+
+.section-01 {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  h2 {
+    padding: 1rem;
+    font-family: 'Playfair Display', serif;
+  }
 }

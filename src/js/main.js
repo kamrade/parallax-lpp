@@ -4,7 +4,8 @@ window.jquery = $;
 window.jQuery = $;
 
 $(document).ready(function() {
-
+  $('.text-block').addClass('my-animated my-fade-down');
+  $('.fore').addClass('my-animated my-fade-left');
 })
 
 $(window).scroll(function() {
@@ -16,7 +17,7 @@ $(window).scroll(function() {
   })
 
   $('.text-block').css({
-    'transform': 'translate(0px, ' + wScroll/4 + '%)'
+    'transform': 'translate(0px, ' + wScroll/8 + '%)'
   })
 
   $('.back').css({
